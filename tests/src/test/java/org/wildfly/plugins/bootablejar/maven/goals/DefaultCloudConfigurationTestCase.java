@@ -32,6 +32,8 @@ public class DefaultCloudConfigurationTestCase extends AbstractBootableJarMojoTe
     @Test
     public void testDefaultConfiguration()
             throws Exception {
+        System.out.println(System.getProperty("java.util.logging.manager"));
+
         BuildBootableJarMojo mojo = lookupMojo("package");
         assertNotNull(mojo);
         assertTrue(mojo.cliSessions.isEmpty());
