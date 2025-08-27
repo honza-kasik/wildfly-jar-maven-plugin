@@ -161,6 +161,7 @@
                         <test.groupid.wildfly>${wildfly.groupId}</test.groupid.wildfly>
                         <!-- DevWatch* tests run maven and need to use the same repository -->
                         <maven.repo.local>${settings.localRepository}</maven.repo.local>
+                        <java.util.logging.config.file>${project.basedir}/src/test/resources/logging.properties</java.util.logging.config.file>
                     </systemPropertyVariables>
                     <argLine>${client.jvm.jpms.args}</argLine>
                 </configuration>
